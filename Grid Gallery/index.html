@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <title> Image Gallery - Prestige Projects</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="full-img" id="fullimgbox">
+            <img src="images/mko1.jpg" id="fullimg">
+            <span onclick="closefullimg()">x</span>
+        </div>
+        <div class="img-gallery">
+            <img src="images/mko1.jpg" onclick="openfullimg(this.src)">
+            <img src="images/mko2.jpg" onclick="openfullimg(this.src)">
+            <img src="images/mko3.jpg" onclick="openfullimg(this.src)">
+            <img src="images/mko 4.jpg" onclick="openfullimg(this.src)">
+            <img src="images/mko 5.jpg" onclick="openfullimg(this.src)">
+            <img src="images/mko 6.jpg" onclick="openfullimg(this.src)">
+            <img src="images/mko 7.jpg" onclick="openfullimg(this.src)">
+            <img src="images/mko 8.jpg" onclick="openfullimg(this.src)">
+        </div>
+
+<script>
+
+var fullimgbox = document.getElementById("fullimgbox");
+var fullimg = document.getElementById("fullimg");
+
+function openfullImg(pic){
+    fullimgbox.style.display = "flex";
+    fullImg.src = pic;
+}
+
+function closefullImg(){
+    fullImgBox.style.display = "none"
+}
+</script>
+    </body>
+</html>
